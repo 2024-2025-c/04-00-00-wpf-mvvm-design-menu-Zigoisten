@@ -43,7 +43,7 @@
                         >
                         <StackPanel Orientation="Horizontal">
                             <fa:IconImage Icon="SolarPanel" Style="{StaticResource menuButtonIcon}"/>
-                            <TextBlock Text="Vezérőpul" Style="{StaticResource menuButtonText}"/>
+                            <TextBlock Text="Vezérőpult" Style="{StaticResource menuButtonText}"/>
                         </StackPanel>
                     </RadioButton>
                     <RadioButton
@@ -66,8 +66,11 @@
                             <TextBlock Text="Osztályok" Style="{StaticResource menuButtonText}"/>
                         </StackPanel>
                     </RadioButton>
-                    <RadioButton Style="{StaticResource menuButton}"
-                             Tag="{StaticResource colorMidleGreen}">
+                    <RadioButton 
+						 Style="{StaticResource menuButton}"
+                         Tag="{StaticResource colorMidleGreen}"
+						 Command="{Binding ShowSchoolSubjectsCommand}"
+				     >
                         <StackPanel Orientation="Horizontal">
                             <fa:IconImage Icon="GraduationCap" Style="{StaticResource menuButtonIcon}"/>
                             <TextBlock Text="Tantárgyak" Style="{StaticResource menuButtonText}"/>
