@@ -15,7 +15,5 @@
         </Grid.RowDefinitions>
         <local:SchoolCitizensMenu Grid.Row="0" Loaded="SchoolCitizensMenu_Loaded"></local:SchoolCitizensMenu>
         <ContentControl Grid.Row="1" Content="{Binding CurrentSchoolCitizensChildView }"></ContentControl>
-        <ContentControl Grid.Row="1" Content="{Binding CurrentSchoolCitizensTeacherView}"></ContentControl>
-        <ContentControl Grid.Row="1" Content="{Binding CurrentSchoolCitizensParentView}"></ContentControl>
     </Grid>
 </UserControl>
