@@ -18,7 +18,7 @@ namespace KretaBasicSchoolSystem.Desktop.Views.SchoolCitizens
     /// <summary>
     /// Interaction logic for TeacherView.xaml
     /// </summary>
-    public partial class TeacherView : Window
+    public partial class TeacherView : UserControl
     {
         public TeacherView()
         {

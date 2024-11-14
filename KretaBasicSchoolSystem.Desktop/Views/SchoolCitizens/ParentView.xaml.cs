@@ -10,6 +10,7 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace KretaBasicSchoolSystem.Desktop.Views.SchoolCitizens
@@ -17,7 +18,7 @@ namespace KretaBasicSchoolSystem.Desktop.Views.SchoolCitizens
     /// <summary>
     /// Interaction logic for ParentView.xaml
     /// </summary>
-    public partial class ParentView : Window
+    public partial class ParentView : UserControl
     {
         public ParentView()
         {
