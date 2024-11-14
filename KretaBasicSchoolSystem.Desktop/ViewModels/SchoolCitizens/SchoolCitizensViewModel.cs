@@ -14,23 +14,19 @@ namespace KretaBasicSchoolSystem.Desktop.ViewModels.SchoolCitizens
         {
             _currentSchoolCitizensChildView = new StudentViewModel();
             _studentViewModel = new StudentViewModel();
-            _currentSchoolCitizensTeacherView = new StudentViewModel();
             _teacherViewModel = new TeacherViewModel();
+            _parentViewModel = new ParentViewModel();
         }
 
-        public SchoolCitizensViewModel(StudentViewModel studentViewModel)
+        public SchoolCitizensViewModel(StudentViewModel studentViewModel,TeacherViewModel teacherViewModel, ParentViewModel parentViewModel)
         {
+            _currentSchoolCitizensChildView = studentViewModel;
+
             _studentViewModel = studentViewModel;
-
-            _currentSchoolCitizensChildView= new StudentViewModel();
+            _teacherViewModel = teacherViewModel;
+            _parentViewModel = parentViewModel;
         }
 
-        public SchoolCitizensViewModel(TeacherViewModel teacherViewModel)
-        {
-            _teacherViewModel= teacherViewModel;
-
-            _currentSchoolCitizensTeacherView = new TeacherViewModel();
-        }
 
         [ObservableProperty]
         private BaseViewModel _currentSchoolCitizensChildView;
@@ -41,10 +37,16 @@ namespace KretaBasicSchoolSystem.Desktop.ViewModels.SchoolCitizens
             CurrentSchoolCitizensChildView = _studentViewModel;
         }
 
-        [ObservableProperty]
-        private BaseViewModel _currentSchoolCitizensTeacherView;
+        [RelayCommand]
+        public void ShowTeacherView()
+        {
+            CurrentSchoolCitizensChildView = _teacherViewModel;
+        }
 
-        [ObservableProperty]
-        private BaseViewModel _currentSchoolCitizensParentView;
+        [RelayCommand]
+        public void ShowParentView()
+        {
+            CurrentSchoolCitizensChildView = _parentViewModel;
+        }
     }
 }
