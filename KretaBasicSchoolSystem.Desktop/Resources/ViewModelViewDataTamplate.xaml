@@ -32,7 +32,19 @@
     <DataTemplate DataType="{x:Type schoolSubjectsViewModels:SchoolSubjectsViewModel}">
         <schoolSubjectsView:SchoolSubjectsView/>
     </DataTemplate>
-    <DataTemplate DataType="{x:Type schoolGradesViewModel:SchoolGradesViewModel}">
+    <DataTemplate DataType="{x:Type schoolGradesViewModels:SchoolGradesViewModel}">
         <schoolGradesView:SchoolGradesView/>
+    </DataTemplate>
+    <DataTemplate DataType="{x:Type schoolGradesViewModels:CurrentClassViewModel}">
+        <schoolGradesView:CurrentClassView/>
+    </DataTemplate>
+    <DataTemplate DataType="{x:Type schoolGradesViewModels:TaughtClassesViewModel}">
+        <schoolGradesView:TaughtClassesView/>
+    </DataTemplate>
+    <DataTemplate DataType="{x:Type schoolGradesViewModels:SemesterEndViewModel}">
+        <schoolGradesView:SemesterEndView/>
+    </DataTemplate>
+    <DataTemplate DataType="{x:Type schoolGradesViewModels:SchoolYearEndViewModel}">
+        <schoolGradesView:SchoolYearEndView/>
     </DataTemplate>
 </ResourceDictionary>
