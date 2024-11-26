@@ -16,7 +16,7 @@
             Width="150"
             Margin="32 0 0 0"
             Content="Tanított Osztályok"
-            Command="{Binding ShowTeacherViewCommand}"
+            Command="{Binding ShowTaughtClassesViewCommand}"
         />
             <Button 
             Style="{StaticResource subMenuButton}"
@@ -24,7 +24,7 @@
             Width="150"
             Margin="12 0 0 0"
             Content="Aktuális óra"
-            Command="{Binding ShowStudentViewCommand}"
+            Command="{Binding ShowCurrentClassViewCommand}"
         />
             <Button 
             Style="{StaticResource subMenuButton}"           
@@ -32,7 +32,7 @@
             Width="150"
             Margin="12 0 0 0"
             Content="Félév zárás"
-            Command="{Binding ShowParentViewCommand}"
+            Command="{Binding ShowSemesterEndViewCommand}"
          />
             <Button 
              Style="{StaticResource subMenuButton}"           
@@ -40,7 +40,7 @@
              Width="150"
              Margin="12 0 0 0"
              Content="Év vége zárás"
-             Command="{Binding ShowParentViewCommand}"
+             Command="{Binding ShowSchoolYearEndViewCommand}"
          />  
         </StackPanel>
     </Border>
