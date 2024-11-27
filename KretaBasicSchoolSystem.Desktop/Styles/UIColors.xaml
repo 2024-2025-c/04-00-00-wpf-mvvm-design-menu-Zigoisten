@@ -1,19 +1,19 @@
 ﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
-    <SolidColorBrush x:Key="StandardButtonBackground" Color="#095E7D"></SolidColorBrush>
+    <SolidColorBrush x:Key="StandardButtonBackground" Color="#f716bf"></SolidColorBrush>
     <SolidColorBrush x:Key="StandardButtonEnabled" Color="#01CB11"></SolidColorBrush>
     <SolidColorBrush x:Key="StandardButtonNotEnabled" Color="Red"></SolidColorBrush>
     <SolidColorBrush x:Key="StandardButtonFocused" Color="#EEEEFF"></SolidColorBrush>
         <!--Background Colors-->
-    <SolidColorBrush x:Key="backgroundPrimaryColor" Color="#3D98A3"/>
+    <SolidColorBrush x:Key="backgroundPrimaryColor" Color="#300325"/>
     <SolidColorBrush x:Key="backgroundSecondaryColor" Color="#01CB33"/>
-    <SolidColorBrush x:Key="backgroundColorThird" Color="#6D92A3"/>
-    <Color x:Key="backgroundPrimaryColor1">#3D98A3</Color>
-    <Color x:Key="backgroundPrimaryColor2">#6D92A3</Color>
-    <Color x:Key="backgroundPrimaryColor3">#6172A3</Color>
-    <Color x:Key="backgroundSecondaryColor1">#00FF33</Color>
-    <Color x:Key="backgroundSecondaryColor2">#01CB33</Color>
-    <Color x:Key="backgroundSecondaryColor3">#029120</Color>
+    <SolidColorBrush x:Key="backgroundColorThird" Color="#400d33"/>
+    <Color x:Key="backgroundPrimaryColor1">#300325</Color>
+    <Color x:Key="backgroundPrimaryColor2">#400d33</Color>
+    <Color x:Key="backgroundPrimaryColor3">#ab1f88</Color>
+    <Color x:Key="backgroundSecondaryColor1">#f716bf</Color>
+    <Color x:Key="backgroundSecondaryColor2">#f218bc</Color>
+    <Color x:Key="backgroundSecondaryColor3">#f218bc</Color>
     <!--Window Border Colors-->
     <Color x:Key="borderColor1">#3D98A3</Color>
     <Color x:Key="borderColor2">White</Color>
@@ -23,8 +23,8 @@
     <!--Color Palette-->
     <SolidColorBrush x:Key="colorRed" Color="#FF0033"/>
     <SolidColorBrush x:Key="colorDarkRed" Color="#FF1000 "/>
-    <SolidColorBrush x:Key="colorGreen" Color="#00FF33"/>
-    <SolidColorBrush x:Key="colorMidleGreen" Color="#01CB33"/>
+    <SolidColorBrush x:Key="colorGreen" Color="#f218bc"/>
+    <SolidColorBrush x:Key="colorMidleGreen" Color="#f218bc"/>
     <SolidColorBrush x:Key="colorDarkGreen" Color="#029120"/>
     <!-- Control button color-->
     <SolidColorBrush x:Key="controlBackgraoundColor" Color="#3E6057"/>
@@ -39,7 +39,7 @@
     <!--Panel Colors-->
     <SolidColorBrush x:Key="panelColor" Color="#00394E"/>
     <SolidColorBrush x:Key="panelOverColor" Color="#005777"/>
-    <SolidColorBrush x:Key="panelActiveColor" Color="#095E7D"/>
+    <SolidColorBrush x:Key="panelActiveColor" Color="#24101f"/>
     <!--Button Colors-->
     <!--TextBox Colors-->
     <!--Etc-->
