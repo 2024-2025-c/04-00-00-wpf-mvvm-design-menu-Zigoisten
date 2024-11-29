@@ -7,6 +7,7 @@ using KretaBasicSchoolSystem.Desktop.ViewModels.SchoolCitizens;
 using KretaBasicSchoolSystem.Desktop.ViewModels.SchoolClasses;
 using KretaBasicSchoolSystem.Desktop.ViewModels.SchoolSubjects;
 using KretaBasicSchoolSystem.Desktop.ViewModels.SchoolGrades;
+using KretaBasicSchoolSystem.Desktop.ViewModels.Users;
 
 namespace KretaBasicSchoolSystem.Desktop.ViewModels
 {
@@ -17,6 +18,7 @@ namespace KretaBasicSchoolSystem.Desktop.ViewModels
         private SchoolClassesViewModel _schoolClassesViewModel;
         private SchoolSubjectsViewModel _schoolSubjectsViewModel;
         private SchoolGradesViewModel _schoolGradesViewModel;
+        private UsersViewModel _usersViewModel;
         public MainViewModel()
         {
             _controlPanelViewModel = new ControlPanelViewModel();
@@ -24,6 +26,7 @@ namespace KretaBasicSchoolSystem.Desktop.ViewModels
             _schoolClassesViewModel = new SchoolClassesViewModel();
             _schoolSubjectsViewModel = new SchoolSubjectsViewModel();
             _schoolGradesViewModel = new SchoolGradesViewModel();
+            _usersViewModel = new UsersViewModel();
         }
 
         public MainViewModel(
@@ -31,7 +34,8 @@ namespace KretaBasicSchoolSystem.Desktop.ViewModels
             SchoolCitizensViewModel schoolCitizensViewModel,
             SchoolClassesViewModel schoolClassViewModel,
             SchoolSubjectsViewModel schoolSubjectsViewModel,
-            SchoolGradesViewModel schoolGradesViewModel
+            SchoolGradesViewModel schoolGradesViewModel,
+            UsersViewModel usersViewModel
             )
         {
             _controlPanelViewModel = controlPanelViewModel;
@@ -39,6 +43,7 @@ namespace KretaBasicSchoolSystem.Desktop.ViewModels
             _schoolClassesViewModel = schoolClassViewModel;
             _schoolSubjectsViewModel = schoolSubjectsViewModel;
             _schoolGradesViewModel = schoolGradesViewModel;
+            _usersViewModel = usersViewModel;
 
 
             CurrentChildView = _controlPanelViewModel;
@@ -92,6 +97,14 @@ namespace KretaBasicSchoolSystem.Desktop.ViewModels
             Caption = "Osztályzatok";
             Icon = IconChar.Book;
             CurrentChildView = _schoolGradesViewModel;
+        }
+
+        [RelayCommand]
+        public void ShowUsers()
+        {
+            Caption = "Felhasználók";
+            Icon = IconChar.UserAstronaut;
+            CurrentChildView = _usersViewModel;
         }
     }
 }

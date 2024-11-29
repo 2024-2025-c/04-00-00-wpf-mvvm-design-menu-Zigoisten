@@ -86,6 +86,16 @@
                             <TextBlock Text="Osztályzatok" Style="{StaticResource menuButtonText}"/>
                         </StackPanel>
                     </RadioButton>
+                    <RadioButton
+                         Style="{StaticResource menuButton}"
+                         Tag="{StaticResource colorGreen}"
+                         Command="{Binding ShowDashbordCommand}"
+ >
+                        <StackPanel Orientation="Horizontal">
+                            <fa:IconImage Icon="UserAstronaut" Style="{StaticResource menuButtonIcon}"/>
+                            <TextBlock Text="Felhasználók" Style="{StaticResource menuButtonText}"/>
+                        </StackPanel>
+                    </RadioButton>
                 </StackPanel>
             </StackPanel>
         </Border>

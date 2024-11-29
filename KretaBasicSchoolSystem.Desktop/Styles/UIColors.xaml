@@ -37,8 +37,8 @@
     <SolidColorBrush x:Key="plainTextColor2" Color="#CCEEFF"/>
     <SolidColorBrush x:Key="plainTextColor3" Color="#AAEEFF"/>
     <!--Panel Colors-->
-    <SolidColorBrush x:Key="panelColor" Color="#00394E"/>
-    <SolidColorBrush x:Key="panelOverColor" Color="#005777"/>
+    <SolidColorBrush x:Key="panelColor" Color="#f716bf"/>
+    <SolidColorBrush x:Key="panelOverColor" Color="#ab1f88"/>
     <SolidColorBrush x:Key="panelActiveColor" Color="#24101f"/>
     <!--Button Colors-->
     <!--TextBox Colors-->
