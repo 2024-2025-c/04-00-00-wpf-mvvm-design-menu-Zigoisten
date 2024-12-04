@@ -10,42 +10,8 @@
                     xmlns:schoolSubjectsView="clr-namespace:KretaBasicSchoolSystem.Desktop.Views.SchoolSubjects"
                     xmlns:schoolGradesViewModel="clr-namespace:KretaBasicSchoolSystem.Desktop.ViewModels.SchoolGrades"
                     xmlns:schoolGradesView="clr-namespace:KretaBasicSchoolSystem.Desktop.Views.SchoolGrades"
-                    xmlns: usersViewModels="clr-namespace:"
+                    xmlns:usersViewModels="clr-namespace:KretaBasicSchoolSystem.Desktop.ViewModels.Users"
+                    xmlns:usersView="clr-namespace:KretaBasicSchoolSystem.Desktop.Views.Users"
                     >
-    <DataTemplate DataType="{x:Type controlPanelViewModels:ControlPanelViewModel}">
-        <controlPanelView:ControlPanelView/>
-    </DataTemplate>
-    <DataTemplate DataType="{x:Type schoolCitizensViewModels:SchoolCitizensViewModel}">
-        <schoolCitizensView:SchoolCitizensView/>
-    </DataTemplate>
-    <DataTemplate DataType="{x:Type schoolCitizensViewModels:StudentViewModel}">
-        <schoolCitizensView:StudentView/>
-    </DataTemplate>
-    <DataTemplate DataType="{x:Type schoolCitizensViewModels:TeacherViewModel}">
-        <schoolCitizensView:TeacherView/>
-    </DataTemplate>
-    <DataTemplate DataType="{x:Type schoolCitizensViewModels:ParentViewModel}">
-        <schoolCitizensView:ParentView/>
-    </DataTemplate>
-    <DataTemplate DataType="{x:Type schoolClassesViewModels:SchoolClassesViewModel}">
-        <schoolClassesView:SchoolClassesView/>
-    </DataTemplate>
-    <DataTemplate DataType="{x:Type schoolSubjectsViewModels:SchoolSubjectsViewModel}">
-        <schoolSubjectsView:SchoolSubjectsView/>
-    </DataTemplate>
-    <DataTemplate DataType="{x:Type schoolGradesViewModel:SchoolGradesViewModel}">
-        <schoolGradesView:SchoolGradesView/>
-    </DataTemplate>
-    <DataTemplate DataType="{x:Type schoolGradesViewModel:CurrentClassViewModel}">
-        <schoolGradesView:CurrentClassView/>
-    </DataTemplate>
-    <DataTemplate DataType="{x:Type schoolGradesViewModel:TaughtClassesViewModel}">
-        <schoolGradesView:TaughtClassesView/>
-    </DataTemplate>
-    <DataTemplate DataType="{x:Type schoolGradesViewModel:SemesterEndViewModel}">
-        <schoolGradesView:SemesterEndView/>
-    </DataTemplate>
-    <DataTemplate DataType="{x:Type schoolGradesViewModel:SchoolYearEndViewModel}">
-        <schoolGradesView:SchoolYearEndView/>
-    </DataTemplate>
+  
 </ResourceDictionary>

@@ -4,9 +4,16 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:local="clr-namespace:KretaBasicSchoolSystem.Desktop.Views.Users"
+             xmlns:viewModels="clr-namespace:KretaBasicSchoolSystem.Desktop.ViewModels.Users"
+             d:DataContext="{d:DesignInstance Type=viewModels:UsersViewModel, IsDesignTimeCreatable=True}"
              mc:Ignorable="d"
              d:DesignHeight="450" d:DesignWidth="800">
     <Grid>
-        <TextBlock>Felhasználók</TextBlock>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="35"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <local:UsersMenu Grid.Row="0" Loaded="UsersMenu_Loaded"></local:UsersMenu>
+        <ContentControl Grid.Row="1" Content="{Binding CurrentUsersChildView }"></ContentControl>
     </Grid>
 </UserControl>

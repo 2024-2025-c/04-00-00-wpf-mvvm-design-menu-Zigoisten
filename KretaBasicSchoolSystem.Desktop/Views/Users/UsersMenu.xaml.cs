@@ -16,18 +16,13 @@ using System.Windows.Shapes;
 namespace KretaBasicSchoolSystem.Desktop.Views.Users
 {
     /// <summary>
-    /// Interaction logic for UsersView.xaml
+    /// Interaction logic for UsersMenu.xaml
     /// </summary>
-    public partial class UsersView : UserControl
+    public partial class UsersMenu : UserControl
     {
-        public UsersView()
+        public UsersMenu()
         {
             InitializeComponent();
-        }
-
-        private void UsersMenu_Loaded(object sender, RoutedEventArgs e)
-        {
-
         }
     }
 }
