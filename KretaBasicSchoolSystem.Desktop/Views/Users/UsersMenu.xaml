@@ -16,7 +16,7 @@
             Width="150"
             Margin="32 0 0 0"
             Content="Felhasználók"
-            Command="{}"
+            Command="{Binding ShowUserViewCommand}"
         />
             <Button 
             Style="{StaticResource subMenuButton}"
@@ -24,7 +24,7 @@
             Width="150"
             Margin="12 0 0 0"
             Content="Adminok"
-            Command="{}"
+            Command="{Binding ShowAdminViewCommand}"
         />
             <Button 
             Style="{StaticResource subMenuButton}"           
@@ -32,7 +32,7 @@
             Width="150"
             Margin="12 0 0 0"
             Content="Eladók"
-            Command="{}"
+            Command="{Binding ShowSellerViewCommand}"
          />
         </StackPanel>
     </Border>
