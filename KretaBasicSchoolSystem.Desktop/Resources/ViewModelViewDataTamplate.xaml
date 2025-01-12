@@ -52,4 +52,13 @@
     <DataTemplate DataType="{x:Type usersViewModels:UsersViewModel}">
         <usersView:UsersView/>
     </DataTemplate>
+    <DataTemplate DataType="{x:Type usersViewModels:UserViewModel}">
+        <usersView:UserView/>
+    </DataTemplate>
+    <DataTemplate DataType="{x:Type usersViewModels:AdminViewModel}">
+        <usersView:AdminView/>
+    </DataTemplate>
+    <DataTemplate DataType="{x:Type usersViewModels:SellerViewModel}">
+        <usersView:SellerView/>
+    </DataTemplate>
 </ResourceDictionary>

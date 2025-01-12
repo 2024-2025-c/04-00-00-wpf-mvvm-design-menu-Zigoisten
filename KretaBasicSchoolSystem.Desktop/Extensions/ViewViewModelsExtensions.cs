@@ -132,6 +132,29 @@ namespace KretaDesktop.Extensions
             {
                 DataContext = s.GetRequiredService<UsersViewModel>
             });
+
+            //Users
+            //User
+            services.AddSingleton<UserViewModel>();
+            services.AddSingleton<UserView>(s => new UserView()
+            {
+                DataContext = s.GetRequiredService<UserViewModel>
+            });
+
+            //Users
+            //Admin
+            services.AddSingleton<AdminViewModel>();
+            services.AddSingleton<AdminView>(s => new AdminView()
+            {
+                DataContext = s.GetRequiredService<AdminViewModel>
+            });
+
+            //Users
+            services.AddSingleton<SellerViewModel>();
+            services.AddSingleton<SellerView>(s => new SellerView()
+            {
+                DataContext = s.GetRequiredService<SellerViewModel>
+            });
         }
     }
 }

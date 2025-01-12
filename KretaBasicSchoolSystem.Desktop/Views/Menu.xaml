@@ -89,7 +89,7 @@
                     <RadioButton
                          Style="{StaticResource menuButton}"
                          Tag="{StaticResource colorGreen}"
-                         Command="{Binding ShowDashbordCommand}"
+                         Command="{Binding ShowUsersCommand}"
  >
                         <StackPanel Orientation="Horizontal">
                             <fa:IconImage Icon="UserAstronaut" Style="{StaticResource menuButtonIcon}"/>
